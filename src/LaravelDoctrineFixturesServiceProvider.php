@@ -7,6 +7,16 @@ use SimpleOnlineHealthcare\Doctrine\Fixtures\Loader;
 
 class LaravelDoctrineFixturesServiceProvider extends ServiceProvider
 {
+    /**
+     * @return void
+     */
+    public function boot(): void
+    {
+        $this->publishes([
+            __DIR__.'/../config/fixtures.php' => config_path('fixtures.php'),
+        ], 'config');
+    }
+
     public function register()
     {
         $this->registerFixtureLoader();
