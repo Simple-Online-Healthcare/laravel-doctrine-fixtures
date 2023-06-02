@@ -1,0 +1,29 @@
+{
+  "name": "simpleonlinehealthcare/laravel-doctrine-fixtures",
+  "description": "Adds Doctrine Fixtures support within Laravel",
+  "type": "library",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Josh Murray",
+      "email": "josh.murray@simpleonlinehealthcare.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "SimpleOnlineHealthcare\\Doctrine\\": "src"
+    }
+  },
+  "require": {
+    "laravel-doctrine/orm": "~1.8",
+    "laravel/framework": "^9.19",
+    "doctrine/data-fixtures": "^1.6"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "SimpleOnlineHealthcare\\Doctrine\\LaravelDoctrineFixturesServiceProvider"
+      ]
+    }
+  }
+}

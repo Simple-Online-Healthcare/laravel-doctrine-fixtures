@@ -1,0 +1,4 @@
+.idea/*
+vendor/*
+.DS_Store
+tools/php-cs-fixer/vendor/*
