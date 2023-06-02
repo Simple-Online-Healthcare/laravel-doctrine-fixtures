@@ -31,6 +31,8 @@ class LaravelDoctrineFixturesServiceProvider extends ServiceProvider
             return;
         }
 
+        $environments = explode(',', $environments);
+
         if (!in_array(env('APP_ENV'), $environments)) {
             return;
         }
