@@ -3,6 +3,7 @@
 namespace SimpleOnlineHealthcare\Doctrine;
 
 use Illuminate\Support\ServiceProvider;
+use SimpleOnlineHealthcare\Doctrine\Commands\DoctrineFixturesCommand;
 use SimpleOnlineHealthcare\Doctrine\Fixtures\Loader;
 
 class LaravelDoctrineFixturesServiceProvider extends ServiceProvider
@@ -15,6 +16,8 @@ class LaravelDoctrineFixturesServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__.'/../config/fixtures.php' => config_path('fixtures.php'),
         ], 'config');
+
+        $this->commands([DoctrineFixturesCommand::class]);
     }
 
     public function register()
