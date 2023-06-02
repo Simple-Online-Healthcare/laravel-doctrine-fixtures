@@ -9,4 +9,8 @@ autoloading works via Composer works.
 
 # Installation
 
-more info later
+1. Add the repository to your `composer.json`
+   - `composer config repositories.simpleonlinehealthcare/laravel-doctrine-fixtures vcs https://github.com/Simple-Online-Healthcare/laravel-doctrine-fixtures`
+2. Require the package within your application
+   - `composer require simpleonlinehealthcare/php-coding-standards`
+3. Laravel should auto-discover the package.
