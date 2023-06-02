@@ -744,16 +744,16 @@
         },
         {
             "name": "simple-online-healthcare/php-coding-standards",
-            "version": "1.0.0",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Simple-Online-Healthcare/php-coding-standards.git",
-                "reference": "f8c3fa48321864ced9047aa0d3174095471c2690"
+                "reference": "1923ee2065dffa078daf4ff9c8cf6401534a400e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Simple-Online-Healthcare/php-coding-standards/zipball/f8c3fa48321864ced9047aa0d3174095471c2690",
-                "reference": "f8c3fa48321864ced9047aa0d3174095471c2690",
+                "url": "https://api.github.com/repos/Simple-Online-Healthcare/php-coding-standards/zipball/1923ee2065dffa078daf4ff9c8cf6401534a400e",
+                "reference": "1923ee2065dffa078daf4ff9c8cf6401534a400e",
                 "shasum": ""
             },
             "require": {
@@ -784,10 +784,10 @@
             ],
             "description": "A repository for our PHP Coding Standards Ruleset for PHP-CS-Fixer.",
             "support": {
-                "source": "https://github.com/Simple-Online-Healthcare/php-coding-standards/tree/1.0.0",
+                "source": "https://github.com/Simple-Online-Healthcare/php-coding-standards/tree/1.0.2",
                 "issues": "https://github.com/Simple-Online-Healthcare/php-coding-standards/issues"
             },
-            "time": "2023-05-23T12:25:20+00:00"
+            "time": "2023-06-02T12:46:02+00:00"
         },
         {
             "name": "symfony/console",
