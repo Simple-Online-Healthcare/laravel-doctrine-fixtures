@@ -30,7 +30,7 @@ class Loader extends BaseLoader
 
     protected function createFixture($class): FixtureInterface
     {
-        if (is_callable($this->instantiator)) {
+        if (isset($this->instantiator) && is_callable($this->instantiator)) {
             return call_user_func($this->instantiator, $class);
         }
 
