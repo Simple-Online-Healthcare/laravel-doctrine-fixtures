@@ -27,11 +27,7 @@ class LaravelDoctrineFixturesServiceProvider extends ServiceProvider
 
     protected function registerFixtureLoader(): void
     {
-        if (($environments = config('fixtures.autoloadEnvironments')) && !empty($environments)) {
-            return;
-        }
-
-        $environments = explode(',', $environments);
+        $environments = config('fixtures.autoloadEnvironments', []);
 
         if (!in_array(env('APP_ENV'), $environments)) {
             return;
