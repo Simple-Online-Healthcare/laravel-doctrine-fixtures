@@ -15,8 +15,8 @@
     }
   },
   "require": {
-    "laravel-doctrine/orm": "~1.8",
-    "laravel/framework": "^9.19",
+    "laravel-doctrine/orm": "^1.8|^2.0",
+    "laravel/framework": "^9.19|^10.10",
     "doctrine/data-fixtures": "^1.6"
   },
   "extra": {
